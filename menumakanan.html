@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/logokedai.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan - Kedai Mom Putra</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a; /* Warna background hitam */
+      color: #ffffff; /* Warna teks putih */
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .menu-item {
+      max-width: 300px;
+      background-color: #333333; /* Warna latar belakang item menu */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+    .menu-item img {
+      width: 100%; /* Menyesuaikan lebar gambar */
+      height: 200px; /* Menyesuaikan tinggi gambar */
+      border-radius: 10px;
+      object-fit: cover; /* Menyamakan ukuran gambar */
+    }
+    .menu-item h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .menu-item p {
+      font-size: 16px;
+    }
+    /* Tombol Pesan */
+    .pesan-btn {
+      display: inline-block;
+      background-color: #FF5733;
+      color: white;
+      text-align: center;
+      padding: 12px 24px; /* Lebih besar */
+      border: none;
+      border-radius: 25px; /* Lebih bundar */
+      font-size: 18px; /* Lebih besar */
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer; /* Menunjukkan kursor saat dihover */
+      margin-top: 15px; /* Jarak atas */
+    }
+
+    .pesan-btn:hover {
+      background-color: #FF7844;
+    }
+
+    /* Tombol Lihat Menu Minuman */
+    .menu-drink-btn {
+      display: block; /* Mengubah display menjadi block agar dapat menerapkan margin otomatis */
+      width: fit-content; /* Mengatur lebar sesuai konten */
+      background-color: #FF5733;
+      color: white;
+      text-align: center;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      margin: 20px auto 0; /* Atur margin atas dan bawah menjadi 20px dan otomatis di samping */
+    }
+
+    .menu-drink-btn:hover {
+      background-color: #FF7844;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="images/bakso bakar.jpg" alt="Bakso bakar">
+      <h3>Bakso bakar</h3>
+      <p>Rp 1.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>  
+    </div>
+    <div class="menu-item">
+      <img src="images/batagor.jpg" alt="Batagor">
+      <h3>Batagor</h3>
+      <p>Rp 5.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/mie ayam goreng.jpg" alt="Mie ayam goreng">
+      <h3>Mie ayam goreng</h3>
+      <p>Rp 8.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/mie ayam kuah.jpg" alt="Mie ayam kuah">
+      <h3>Mie ayam kuah</h3>
+      <p>Rp 7.000</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/seblak.jpg" alt="Seblak">
+      <h3>Seblak</h3>
+      <p>Rp 12.000</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/sempolan.jpg" alt="Sempolan">
+      <h3>Sempolan</h3>
+      <p>Rp 1.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/sosis bakar.jpg" alt="Sosis bakar">
+      <h3>Sosis bakar</h3>
+      <p>Rp 1.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+    <div class="menu-item">
+      <img src="images/tahu walik.jpg" alt="Tahu walik">
+      <h3>Tahu walik</h3>
+      <p>Rp 1.000/pcs</p>
+      <p>tidak pedas/sedang/pedas</p>
+      <a href="#" class="pesan-btn">Pesan Sekarang</a>
+    </div>
+  </div>
+  <a href="./menuminuman.html" class="menu-drink-btn">Lihat Menu Minuman</a>
+  <script>
+    // Function untuk mengirim pesan WhatsApp
+    function kirimPesan(namaMakanan) {
+      // Ganti nomor WhatsApp penjual dengan nomor yang sesuai
+      var nomorPenjual = "+6281215256354";
+      // Pesan prabayar yang akan dikirim
+      var pesan = "Halo, saya ingin memesan " + namaMakanan + ", Jumlah Pesanan : Level: ";
+      // Membuka aplikasi WhatsApp dengan pesan prabayar yang sesuai
+      window.open("https://wa.me/" + nomorPenjual + "?text=" + encodeURIComponent(pesan), '_blank');
+    }
+
+    // Mengambil semua elemen dengan kelas 'pesan-btn'
+    var pesanButtons = document.querySelectorAll('.pesan-btn');
+
+    // Menambahkan event listener untuk setiap tombol pesan
+    pesanButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        // Mengambil nama makanan dari teks di dalam elemen h3 yang menjadi saudaranya
+        var namaMakanan = this.parentNode.querySelector('h3').innerText;
+        // Memanggil fungsi kirimPesan dengan nama makanan sebagai argumen
+        kirimPesan(namaMakanan);
+      });
+    });
+  </script>
+</body>
+</html>
